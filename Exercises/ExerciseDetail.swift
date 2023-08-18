@@ -23,4 +23,3 @@ struct ExerciseDetail: View {
         .navigationTitle("Exercise Detail")
     }
 }
-

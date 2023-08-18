@@ -26,7 +26,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-// Rest of the code remains the same
+
 
 extension Color {
     init(hex: String) {

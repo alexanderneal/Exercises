@@ -52,5 +52,4 @@ struct OutlineRectangle: View {
     }
 }
 
-// Rest of the code remains the same
 
