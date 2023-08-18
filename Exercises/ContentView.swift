@@ -13,10 +13,25 @@ struct ContentView: View {
                 }
                 .padding(.horizontal)
             }
-            .background(Color(hex: "#063970")) // Set background color to #063970
+            .background(Color(hex: "#063970"))
             .foregroundColor(.white)
-            .navigationTitle("Fitness App")
+            .navigationBarTitle("Fitness App", displayMode: .inline)
+            .navigationBarTitleDisplayMode(.inline)
+            .font(.custom("SF Pro", size: 17))
+            .overlay(
+                Rectangle()
+                    .foregroundColor(Color.white.opacity(0.85)) // Semi-translucent white background
+                    .ignoresSafeArea(.container, edges: .top) // Make sure it covers the whole screen
+                    .frame(height: 60) // Adjust the height of the sticky header
+                    .opacity(stickyHeaderOpacity) // Opacity changes as you scroll
+            )
         }
+    }
+    
+    private var stickyHeaderOpacity: Double {
+        // Adjust the opacity based on scroll position
+        let scrollPosition = max(-100, ScrollViewProxy.defaultMinListRowHeight - 20)
+        return Double(min(1, -scrollPosition / 100))
     }
 }
 
@@ -26,7 +41,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-
+// Rest of the code remains the same
 
 extension Color {
     init(hex: String) {
