@@ -7,11 +7,12 @@ struct CategoryView: View {
         Text(category.rawValue)
             .font(.headline)
             .frame(maxWidth: .infinity, minHeight: 100)
+            .background(Color.gray) // Same gray color for background
             .foregroundColor(.white)
             .cornerRadius(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray, lineWidth: 2) // Outline with gray border
+                    .stroke(Color.gray, lineWidth: 2) // Same gray color for outline
             )
     }
 }
