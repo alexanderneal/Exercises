@@ -17,6 +17,7 @@ struct ContentView: View {
                     }
                 }
                 .padding(.horizontal)
+                .padding(.top, 20) // Add some space between "Resumen" and category boxes
             }
             .background(Color(hex: "#063970"))
             .foregroundColor(.white)
