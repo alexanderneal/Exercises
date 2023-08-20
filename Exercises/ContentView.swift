@@ -15,7 +15,7 @@ struct ContentView: View {
                                 )
                         }
                     }
-                }
+                } 
                 .padding(.horizontal)
             }
             .background(Color(hex: "#063970"))
