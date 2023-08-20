@@ -8,22 +8,43 @@ struct ContentView: View {
                     ForEach(Category.allCases, id: \.self) { category in
                         NavigationLink(destination: ExerciseListView(category: category)) {
                             CategoryView(category: category)
-                                .background(Color.clear) // Clear background
+                                .background(Color.clear)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.gray, lineWidth: 2) // Outline with gray border
+                                        .stroke(Color.gray, lineWidth: 2)
                                 )
                         }
                     }
-                } 
+                }
                 .padding(.horizontal)
             }
             .background(Color(hex: "#063970"))
             .foregroundColor(.white)
-            .navigationBarTitle("Fitness App", displayMode: .inline)
+            .navigationBarItems(leading: TitleAndDateView())
             .navigationBarTitleDisplayMode(.inline)
             .font(.custom("SF Pro", size: 17))
         }
+    }
+}
+
+struct TitleAndDateView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(formattedDate())
+                .font(.system(size: 13))
+                .foregroundColor(.gray)
+            Text("Resumen")
+                .font(.title)
+                .bold()
+                .foregroundColor(.white)
+        }
+    }
+    
+    private func formattedDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, d MMM"
+        dateFormatter.locale = Locale.current // Use the user's preferred language
+        return dateFormatter.string(from: Date()).uppercased()
     }
 }
 
@@ -32,8 +53,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-// Rest of the code remains the same
 
 extension Color {
     init(hex: String) {
