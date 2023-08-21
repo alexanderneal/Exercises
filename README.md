@@ -1,3 +1,2 @@
 # Exercises
-2 Click and start exercising
-
+2 Clicks to exercise.
