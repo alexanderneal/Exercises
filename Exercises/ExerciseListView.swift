@@ -1,9 +1,26 @@
 import SwiftUI
 
+extension Color {
+    init(hex: String) {
+        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+        
+        var rgb: UInt64 = 0
+        
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+        
+        let red = Double((rgb >> 16) & 0xFF) / 255.0
+        let green = Double((rgb >> 8) & 0xFF) / 255.0
+        let blue = Double(rgb & 0xFF) / 255.0
+        
+        self.init(red: red, green: green, blue: blue)
+    }
+}
+
 struct ExerciseListView: View {
     @Environment(\.presentationMode) var presentationMode
     let category: Category
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -11,28 +28,28 @@ struct ExerciseListView: View {
                 Spacer()
             }
             .padding(.horizontal)
-            
+
             Text(category.rawValue)
                 .font(.title)
                 .padding(.bottom, 20)
-            
+
             ScrollView {
                 LazyVStack(spacing: 20) {
-                    ForEach(1...8, id: \.self) { exerciseID in
-                        NavigationLink(destination: ExerciseDetail(exerciseID: exerciseID)) {
-                            OutlineRectangle()
+                    ForEach(category.exercises) { exercise in
+                        NavigationLink(destination: ExerciseDetail(exerciseID: exercise.id)) {
+                            ExerciseCell(exercise: exercise)
                         }
                     }
                 }
                 .padding(.horizontal)
             }
         }
-        .background(Color(hex: "#063970")) // Set background color to #063970
+        .background(Color(hex: "#063970")) // Use a string representation of the hex color code
         .foregroundColor(.white)
         .navigationTitle("")
         .navigationBarHidden(true)
     }
-    
+
     private var backButton: some View {
         Button(action: {
             presentationMode.wrappedValue.dismiss()
@@ -44,12 +61,5 @@ struct ExerciseListView: View {
     }
 }
 
-struct OutlineRectangle: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .stroke(Color.gray, lineWidth: 2)
-            .frame(maxWidth: .infinity, minHeight: 100)
-    }
-}
-
+// ... Rest of the ExerciseListView file ...
 

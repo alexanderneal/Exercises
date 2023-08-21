@@ -7,21 +7,15 @@ struct CategoryView: View {
         Text(category.rawValue)
             .font(.headline)
             .frame(maxWidth: .infinity, minHeight: 100)
-            .background(Color.gray) // Same gray color for background
+            .background(Color.gray)
             .foregroundColor(.white)
             .cornerRadius(10)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray, lineWidth: 2) // Same gray color for outline
+                    .stroke(Color.gray, lineWidth: 2)
             )
     }
 }
 
-enum Category: String, CaseIterable {
-    case arms = "Arms"
-    case pecho = "Pecho"
-    case back = "Back"
-    case legs = "Legs"
-    case abs = "Abs"
-}
+// ... Rest of the CategoryView file ...
 
