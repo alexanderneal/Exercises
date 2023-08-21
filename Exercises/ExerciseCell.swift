@@ -5,15 +5,17 @@ struct ExerciseCell: View {
 
     var body: some View {
         HStack {
-            Image(systemName: "photo") // Placeholder for exercise image
+            Image("ExerciseImages/abs/abs_workout.png")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
                 .foregroundColor(.white)
                 .background(Color.gray)
                 .cornerRadius(10)
-            Text(exercise.details) // Display exercise details text
-                .foregroundColor(.black) // Adjust text color
+                .padding(.leading, 10) // Add padding to the left
+
+            Text(exercise.details)
+                .foregroundColor(.black)
                 .padding(.horizontal)
         }
         .frame(maxWidth: .infinity, minHeight: 100)

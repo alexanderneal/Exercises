@@ -17,15 +17,21 @@ extension Category {
             ]
         case .back:
             return [
-                // ... Add exercises for back category ...
+                Exercise(id: 1, details: "Back Exercise 1"),
+                Exercise(id: 2, details: "Back Exercise 2"),
+                // ... Add more exercises ...
             ]
         case .legs:
             return [
-                // ... Add exercises for legs category ...
+                Exercise(id: 1, details: "Leg Exercise 1"),
+                Exercise(id: 2, details: "Leg Exercise 2"),
+                // ... Add more exercises ...
             ]
         case .abs:
             return [
-                // ... Add exercises for abs category ...
+                Exercise(id: 1, details: "Abs Exercise 1"),
+                Exercise(id: 2, details: "Abs Exercise 2"),
+                // ... Add more exercises ...
             ]
         }
     }
