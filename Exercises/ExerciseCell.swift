@@ -5,7 +5,7 @@ struct ExerciseCell: View {
 
     var body: some View {
         HStack {
-            Image("ExerciseImages/abs/abs_workout.png")
+            Image("plank") // Use the image name without the .png extension
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 50, height: 50)
