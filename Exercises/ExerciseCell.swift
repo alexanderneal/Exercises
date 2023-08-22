@@ -5,85 +5,32 @@ struct ExerciseCell: View {
     
     var body: some View {
         HStack {
-            if exercise.details == "1 set x 1 min" {
+            if exercise.imageName == "plank" {
                 Image("plank")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            } else if exercise.details == "1 set x 15 reps." {
+                Text("1 set x 1 min")
+            } else if exercise.imageName == "cable_down_abs" {
                 Image("cable_down_abs")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            } else if exercise.details == "1 set x 20 reps." {
+                Text(exercise.details)
+            } else if exercise.imageName == "abs_workout" {
                 Image("abs_workout")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            }
-            else if exercise.details == "2 set x 10 reps" {
+                Text(exercise.details)
+            } else if exercise.imageName == "decline_abs" {
                 Image("decline_abs")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            }
-            else if exercise.details == "1 set x 12 reps." {
+                Text(exercise.details)
+            } else if exercise.imageName == "hanging_leg_raise_ab_exercise" {
                 Image("hanging_leg_raise_ab_exercise")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            }
-            else if exercise.details == "1 set x 8 reps." {
+                Text(exercise.details)
+            } else if exercise.imageName == "rise_up_abs" {
                 Image("rise_up_abs")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            }
-            else if exercise.details == "1 set x 22 reps." {
+                Text(exercise.details)
+            } else if exercise.imageName == "sat_down_skipping_abs" {
                 Image("sat_down_skipping_abs")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
-            }
-            else if exercise.details == "1 set x 30 secs" {
+                Text(exercise.details)
+            } else if exercise.imageName == "side_plank" {
                 Image("side_plank")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 130, height: 150)
-                    .foregroundColor(.white)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                    .padding(.leading, -40) // Add padding to the left
+                Text(exercise.details)
             }
-            
+
             Text(exercise.details)
                 .foregroundColor(.black)
                 .padding(.horizontal)
@@ -93,4 +40,3 @@ struct ExerciseCell: View {
         .cornerRadius(10)
     }
 }
-
