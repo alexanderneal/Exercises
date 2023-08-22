@@ -8,7 +8,7 @@ struct ExerciseDetail: View {
             Image(systemName: "photo") // Placeholder for exercise image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 150, height: 150)
+                .frame(width: 120, height: 120)
                 .foregroundColor(.white)
                 .background(Color.gray)
                 .cornerRadius(10)

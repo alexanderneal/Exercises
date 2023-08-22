@@ -19,7 +19,7 @@ extension Category {
             ]
         case .abs:
             return [
-                Exercise(id: 1, details: "1 set x 1 min", imageName: "plank"),
+                Exercise(id: 1, details: "1 set x 10 reps.", imageName: "plank"),
                 Exercise(id: 2, details: "1 set x 20 reps.", imageName: "abs_workout"),
                 Exercise(id: 3, details: "1 set x 15 reps.", imageName: "cable_down_abs"),
                 Exercise(id: 4, details: "2 set x 10 reps", imageName: "decline_abs"),
