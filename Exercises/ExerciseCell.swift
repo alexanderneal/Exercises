@@ -23,8 +23,8 @@ struct ExerciseCell: View {
                     .background(Color.gray)
                     .cornerRadius(10)
                     .padding(.leading, -40) // Add padding to the left
-            } else if exercise.details == "Abs Exercise 3" {
-                Image("abs_workout_3")
+            } else if exercise.details == "1 set x 20 reps." {
+                Image("abs_workout")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 130, height: 150)
