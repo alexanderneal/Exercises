@@ -1,8 +1,6 @@
 import SwiftUI
-
 struct ExerciseCell: View {
     var exercise: Exercise
-
     var body: some View {
         HStack {
             Image("plank") // Use the image name without the .png extension
@@ -13,7 +11,6 @@ struct ExerciseCell: View {
                 .background(Color.gray)
                 .cornerRadius(10)
                 .padding(.leading, -40) // Add padding to the left
-
             Text(exercise.details)
                 .foregroundColor(.black)
                 .padding(.horizontal)
@@ -23,4 +20,3 @@ struct ExerciseCell: View {
         .cornerRadius(10)
     }
 }
-
