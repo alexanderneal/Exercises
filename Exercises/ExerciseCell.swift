@@ -8,11 +8,11 @@ struct ExerciseCell: View {
             Image("plank") // Use the image name without the .png extension
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 50, height: 50)
+                .frame(width: 130, height: 150)
                 .foregroundColor(.white)
                 .background(Color.gray)
                 .cornerRadius(10)
-                .padding(.leading, 10) // Add padding to the left
+                .padding(.leading, -40) // Add padding to the left
 
             Text(exercise.details)
                 .foregroundColor(.black)
