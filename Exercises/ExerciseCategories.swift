@@ -3,10 +3,28 @@ extension Category {
         switch self {
         case .arms:
             return [
+                Exercise(id: 1, details: "1 set x 12 reps.", imageName: "bicep curl flat grab"),
+                Exercise(id: 2, details: "1 set x 12 reps.", imageName: "bicep curl neutral grab"),
+                Exercise(id: 3, details: "1 sets x 10 reps.", imageName: "Dumbbell_lateral_raises_arms"),
+                Exercise(id: 4, details: "1 set x 10 reps.", imageName: "shoulder_press_arms"),
+                Exercise(id: 5, details: "1 set to failiure", imageName: "shoulders_arms"),
+                Exercise(id: 6, details: "1 set x 10 reps.", imageName: "stand up bicep curl"),
+                Exercise(id: 7, details: "2 set. x 12 reps.", imageName: "tricep_arms"),
+                Exercise(id: 8, details: "1 sets x 10 reps.", imageName: "triceps_arm"),
+                
                 // ... Add exercises for arms category ...
             ]
         case .pecho:
             return [
+                Exercise(id: 1, details: "1 set x Maxi", imageName: "bench_press_chest"),
+                Exercise(id: 2, details: "1 set x 12 reps.", imageName: "chest_dips_pecho"),
+                Exercise(id: 3, details: "1 sets x 12 reps.", imageName: "forward_chest"),
+                Exercise(id: 4, details: "1 set x 12 reps.", imageName: "Incline_dumbbells_press"),
+                Exercise(id: 5, details: "1 set to 6", imageName: "open_fly_chest"),
+                Exercise(id: 6, details: "1 set x 10 reps.", imageName: "stand up bicep curl"),
+                Exercise(id: 7, details: "1 set. x 12 reps.", imageName: "opening_chest"),
+                Exercise(id: 8, details: "1 sets x 20 reps.", imageName: "push_up_chest"),
+                
                 // ... Add exercises for pecho category ...
             ]
         case .back:

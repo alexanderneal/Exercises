@@ -4,7 +4,65 @@ struct ExerciseCell: View {
     var exercise: Exercise
     
     var body: some View {
-        HStack { //Abs
+        HStack {
+            //Arms
+            if exercise.imageName == "bicep curl flat grab" {
+                Image("bicep curl flat grab")
+            } else if exercise.imageName == "bicep curl neutral grab" {
+                Image("bicep curl neutral grab")
+            } else if exercise.imageName == "Dumbbell_lateral_raises_arms" {
+                Image("Dumbbell_lateral_raises_arms")
+            } else if exercise.imageName == "shoulder_press_arms" {
+                Image("shoulder_press_arms")
+            } else if exercise.imageName == "shoulders_arms" {
+                Image("shoulders_arms")
+            } else if exercise.imageName == "stand up bicep curl" {
+                Image("stand up bicep curl")
+            } else if exercise.imageName == "tricep_arms" {
+                Image("tricep_arms")
+            } else if exercise.imageName == "triceps_arm" {
+                Image("triceps_arm")
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //Pecho
+            if exercise.imageName == "bench_press_chest" {
+                Image("bench_press_chest")
+            } else if exercise.imageName == "chest_dips_pecho" {
+                Image("chest_dips_pecho")
+            } else if exercise.imageName == "forward_chest" {
+                Image("forward_chest")
+            } else if exercise.imageName == "Incline_dumbbells_press" {
+                Image("Incline_dumbbells_press")
+            } else if exercise.imageName == "open_fly_chest" {
+                Image("open_fly_chest")
+            } else if exercise.imageName == "opening_chest" {
+                Image("opening_chest")
+            } else if exercise.imageName == "push_up_chest" {
+                Image("push_up_chest")
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //Abs
             if exercise.imageName == "plank" {
                 Image("plank")
             } else if exercise.imageName == "cable_down_abs" {
@@ -22,6 +80,16 @@ struct ExerciseCell: View {
             } else if exercise.imageName == "side_plank" {
                 Image("side_plank")
                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
             //Legs
             } else if exercise.imageName == "squats" {
                 Image("squats")
@@ -37,6 +105,13 @@ struct ExerciseCell: View {
                 Image("pull_down_legs")
             } else if exercise.imageName == "leg_curls" {
                 Image("leg_curls")
+                
+                
+                
+                
+                
+                
+                
             
             //Back
             } else if exercise.imageName == "bend_over_dumbells_row_back" {
