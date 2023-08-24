@@ -34,6 +34,7 @@ struct TitleAndDateView: View {
             Text(formattedDate())
                 .font(.system(size: 13))
                 .foregroundColor(.gray)
+                .padding(.top, 20) // Add more padding to lower the position
             Text("Resumen")
                 .font(.title)
                 .bold()
@@ -48,6 +49,7 @@ struct TitleAndDateView: View {
         return dateFormatter.string(from: Date()).uppercased()
     }
 }
+
 
 // ... Rest of the ContentView file ...
 
