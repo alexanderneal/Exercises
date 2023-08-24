@@ -7,6 +7,6 @@ enum Category: String, CaseIterable {
     case legs = "Legs"
     case abs = "Abs"
 
-    // ... Additional code if needed ...
+    
 }
 

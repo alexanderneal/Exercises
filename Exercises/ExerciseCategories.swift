@@ -21,7 +21,7 @@ extension Category {
                 Exercise(id: 4, details: "1 set x 14 reps.", imageName: "leg_curls"),
                 Exercise(id: 5, details: "1 set x 10 reps.", imageName: "down_press_legs"),
                 Exercise(id: 6, details: "1 set x 10 reps.", imageName: "pull_down_legs"),
-                Exercise(id: 7, details: "1 set", imageName: "steps_legs"),
+                Exercise(id: 7, details: "1 set.", imageName: "steps_legs"),
                 // ... Add exercises for legs category ...
             ]
         case .abs:
