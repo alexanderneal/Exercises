@@ -11,8 +11,6 @@ extension Category {
                 Exercise(id: 6, details: "1 set x 10 reps.", imageName: "stand up bicep curl"),
                 Exercise(id: 7, details: "2 set. x 12 reps.", imageName: "tricep_arms"),
                 Exercise(id: 8, details: "1 sets x 10 reps.", imageName: "triceps_arm"),
-                
-                // ... Add exercises for arms category ...
             ]
         case .pecho:
             return [
@@ -24,8 +22,6 @@ extension Category {
                 Exercise(id: 6, details: "1 set x 10 reps.", imageName: "stand up bicep curl"),
                 Exercise(id: 7, details: "1 set. x 12 reps.", imageName: "opening_chest"),
                 Exercise(id: 8, details: "1 sets x 20 reps.", imageName: "push_up_chest"),
-                
-                // ... Add exercises for pecho category ...
             ]
         case .back:
             return [
@@ -37,8 +33,6 @@ extension Category {
                 Exercise(id: 6, details: "1 set x 10 reps.", imageName: "pull_back"),
                 Exercise(id: 7, details: "1 set. x 10 reps.", imageName: "bend_over_dumbells_row_back"),
                 Exercise(id: 8, details: "2 sets x 10 reps.", imageName: "row_back"),
- 
-                // ... Add exercises for back category ...
             ]
         case .legs:
             return [
@@ -49,7 +43,6 @@ extension Category {
                 Exercise(id: 5, details: "1 set x 10 reps.", imageName: "down_press_legs"),
                 Exercise(id: 6, details: "1 set x 10 reps.", imageName: "pull_down_legs"),
                 Exercise(id: 7, details: "1 set.", imageName: "steps_legs"),
-                // ... Add exercises for legs category ...
             ]
         case .abs:
             return [
@@ -61,7 +54,6 @@ extension Category {
                 Exercise(id: 6, details: "1 set x 8 reps.", imageName: "rise_up_abs"),
                 Exercise(id: 7, details: "1 set x 22 reps.", imageName: "sat_down_skipping_abs"),
                 Exercise(id: 8, details: "1 set x 30 secs", imageName: "side_plank"),
-                // Exercises for abs category
             ]
         }
     }
