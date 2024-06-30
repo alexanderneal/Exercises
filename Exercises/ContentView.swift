@@ -19,7 +19,15 @@ struct ContentView: View {
                 .padding(.horizontal)
                 .padding(.top, 20) // Add some space between "Resumen" and category boxes
             }
-            .background(Color(hex: "#063970")) // Use a string representation of the hex color code
+            
+            .background(
+                        LinearGradient(
+                            gradient: Gradient(colors: [Color.blue, Color.white]),
+                            startPoint: .top,
+                            endPoint: .bottom
+                        )
+                    )
+            //.background(Color(hex: "#063970")) // Use a string representation of the hex color code
             .foregroundColor(.white)
             .navigationBarTitleDisplayMode(.inline)
             .font(.custom("SF Pro", size: 17))
@@ -51,5 +59,5 @@ struct TitleAndDateView: View {
 }
 
 
-// ... Rest of the ContentView file ...
+
 
