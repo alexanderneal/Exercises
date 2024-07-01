@@ -35,14 +35,14 @@ struct ContentView: View {
                     
                     // Mode toggle buttons
                     HStack {
-                                            ModeToggleButton(symbolName: "sun.max.fill", isSelected: !isDarkMode, color: Color.yellow) {
-                                                isDarkMode = false
-                                            }
-                                            ModeToggleButton(symbolName: "moon", isSelected: isDarkMode, color: Color.white) {
-                                                isDarkMode = true
-                                            }
-                                        }
-                                        .padding(.bottom)
+                        ModeToggleButton(symbolName: "sun.max.fill", isSelected: !isDarkMode, color: Color.yellow) {
+                            isDarkMode = false
+                        }
+                        ModeToggleButton(symbolName: "moon", isSelected: isDarkMode, color: Color.white) {
+                            isDarkMode = true
+                        }
+                    }
+                    .padding(.bottom)
                 }
             }
             .foregroundColor(isDarkMode ? .white : .black)
@@ -77,23 +77,28 @@ struct TitleAndDateView: View {
     }
 }
 
-
-
 struct ModeToggleButton: View {
-    let title: String
+    let symbolName: String
     let isSelected: Bool
+    let color: Color
     let action: () -> Void
     
     var body: some View {
         Button(action: action) {
-            Text(title)
-                .padding()
-                .background(isSelected ? Color.blue : Color.gray)
-                .foregroundColor(.white)
-                .cornerRadius(10)
+            Image(systemName: symbolName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 24, height: 24)
+                .padding(10)
+                .background(isSelected ? color.opacity(0.2) : Color.gray.opacity(0.7))
+                .foregroundColor(isSelected ? color : .gray)
+                .clipShape(Circle()) // Make the button circular
+                .animation(.bouncy, value: isSelected)
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
