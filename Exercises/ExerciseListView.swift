@@ -19,6 +19,7 @@ extension Color {
 
 struct ExerciseListView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Binding var isDarkMode: Bool
     let category: Category
 
     var body: some View {
@@ -36,7 +37,7 @@ struct ExerciseListView: View {
             ScrollView {
                 LazyVStack(spacing: 20) {
                     ForEach(category.exercises) { exercise in
-                        NavigationLink(destination: ExerciseDetail(exerciseID: exercise.id)) {
+                        NavigationLink(destination: ExerciseDetail(isDarkMode: $isDarkMode, exerciseID: exercise.id)) {
                             ExerciseCell(exercise: exercise)
                         }
                     }
@@ -44,8 +45,8 @@ struct ExerciseListView: View {
                 .padding(.horizontal)
             }
         }
-        .background(Color(hex: "#063970")) // Use a string representation of the hex color code
-        .foregroundColor(.white)
+        .background(isDarkMode ? Color.black : Color.white)
+        .foregroundColor(isDarkMode ? .white : .black)
         .navigationTitle("")
         .navigationBarHidden(true)
     }

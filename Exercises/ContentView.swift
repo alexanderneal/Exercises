@@ -17,7 +17,7 @@ struct ContentView: View {
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(Category.allCases, id: \.self) { category in
-                                NavigationLink(destination: ExerciseListView(category: category)) {
+                                NavigationLink(destination: ExerciseListView(isDarkMode:$isDarkMode, category: category)) {
                                     CategoryView(category: category, isDarkMode: $isDarkMode)
                                         .background(Color.clear)
                                         .overlay(
@@ -97,12 +97,3 @@ struct ModeToggleButton: View {
         }
     }
 }
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(isDarkMode: .constant(false))
-    }
-}
-

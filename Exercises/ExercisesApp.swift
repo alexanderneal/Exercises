@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct ExercisesApp: App {
-    @State private var isDarkMode = false
+    @AppStorage("isDarkMode") private var isDarkMode = false
 
     var body: some Scene {
         WindowGroup {
