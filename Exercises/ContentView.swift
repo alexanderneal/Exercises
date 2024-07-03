@@ -1,8 +1,12 @@
 import SwiftUI
+import ActivityKit
 
 struct ContentView: View {
     @Binding var isDarkMode: Bool
-
+    @State private var isTrackingMeters: Bool = false
+    @State private var startNav: Date? = nil
+    @State private var activity: Activity<ExercisesTrackingAttributes>? = nil
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -14,10 +18,13 @@ struct ContentView: View {
                 ).edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    TitleAndDateView(isDarkMode: $isDarkMode)
+                        .padding(.top, 20)
+                    
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(Category.allCases, id: \.self) { category in
-                                NavigationLink(destination: ExerciseListView(isDarkMode:$isDarkMode, category: category)) {
+                                NavigationLink(destination: ExerciseListView(isDarkMode: $isDarkMode, category: category)) {
                                     CategoryView(category: category, isDarkMode: $isDarkMode)
                                         .background(Color.clear)
                                         .overlay(
@@ -30,25 +37,61 @@ struct ContentView: View {
                         .padding(.horizontal)
                         .padding(.top, 20)
                     }
+                   
                     
                     Spacer()
                     
-                    // Mode toggle buttons
-                    HStack {
-                        ModeToggleButton(symbolName: "sun.max.fill", isSelected: !isDarkMode, color: Color.yellow) {
-                            isDarkMode = false
+                    VStack {
+                        Button(action: toggleTracking) {
+                            Text(isTrackingMeters ? "STOP" : "START")
+                                .fontWeight(.light)
+                                .foregroundColor(.white)
+                                .frame(width: 100, height: 50) // Adjusted size
+                                .background(Capsule().fill(isTrackingMeters ? Color.red.opacity(0.8) : Color.green.opacity(0.8)))
                         }
-                        ModeToggleButton(symbolName: "moon", isSelected: isDarkMode, color: Color.white) {
-                            isDarkMode = true
+                        .padding(.bottom, 20) // Push button down a bit
+                        
+                        HStack {
+                            ModeToggleButton(symbolName: "sun.max.fill", isSelected: !isDarkMode, color: Color.yellow) {
+                                isDarkMode = false
+                            }
+                            ModeToggleButton(symbolName: "moon", isSelected: isDarkMode, color: Color.white) {
+                                isDarkMode = true
+                            }
                         }
+                        .padding(.bottom)
                     }
-                    .padding(.bottom)
+                    
+                    if let startNav = startNav {
+                        Text("Started: \(startNav, style: .timer)")
+                            .padding(.bottom, 10) // Adds space between the "Started" text and the bottom of the view
+                    }
                 }
             }
             .foregroundColor(isDarkMode ? .white : .black)
             .navigationBarTitleDisplayMode(.inline)
             .font(.custom("SF Pro", size: 17))
-            .navigationBarItems(leading: TitleAndDateView(isDarkMode: $isDarkMode))
+        }
+    }
+    
+    func toggleTracking() {
+        isTrackingMeters.toggle()
+
+        if isTrackingMeters {
+            startNav = .now
+            
+            // Start live activity
+            let attributes = ExercisesTrackingAttributes()
+            let state = ExercisesTrackingAttributes.ContentState(startNav: .now)
+            activity = try? Activity<ExercisesTrackingAttributes>.request(attributes: attributes, contentState: state, pushType: nil)
+        } else {
+            // End live activity
+            guard let startNav = startNav else { return }
+            let state = ExercisesTrackingAttributes.ContentState(startNav: startNav)
+            Task {
+                await activity?.end(using: state, dismissalPolicy: .immediate)
+            }
+            self.startNav = nil
         }
     }
 }
@@ -62,7 +105,7 @@ struct TitleAndDateView: View {
                 .font(.system(size: 13))
                 .foregroundColor(.gray)
                 .padding(.top, 20)
-            Text("Resumen")
+            Text("Exercises")
                 .font(.title)
                 .bold()
                 .foregroundColor(isDarkMode ? .white : .black)
@@ -97,3 +140,4 @@ struct ModeToggleButton: View {
         }
     }
 }
+

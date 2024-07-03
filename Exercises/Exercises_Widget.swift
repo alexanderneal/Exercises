@@ -9,10 +9,10 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct Tutorial_Widget: Widget {
+struct Exercises_Widget: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: NavigationTrackingAttributes.self) { context in
-            NavigationTrackingWidgetView(context: context)
+        ActivityConfiguration(for: ExercisesTrackingAttributes.self) { context in
+            ExercisesTrackingWidgetView(context: context)
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.bottom){
@@ -37,7 +37,7 @@ struct Tutorial_Widget: Widget {
                         .padding(.trailing)
                         .foregroundColor(.red)
 
-                    
+
                 }
             } compactLeading: {
                 Image(systemName: "location.north.fill")
@@ -45,8 +45,8 @@ struct Tutorial_Widget: Widget {
                             .aspectRatio(contentMode: .fit) // Keep the aspect ratio
                             .frame(width: 17, height: 17)
                             .foregroundColor(.red)
-                
-                
+
+
             } compactTrailing: {
                 Text("N").foregroundColor(.red)
             } minimal: {
@@ -62,11 +62,10 @@ struct Tutorial_Widget: Widget {
 }
 
 
-struct NavigationTrackingWidgetView: View {
-    let context: ActivityViewContext<NavigationTrackingAttributes>
-    
+struct ExercisesTrackingWidgetView: View {
+    let context: ActivityViewContext<ExercisesTrackingAttributes>
+
     var body: some View{
         Text(context.state.startNav, style: .relative)
     }
 }
-
