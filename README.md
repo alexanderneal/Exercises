@@ -1,2 +1,6 @@
 # Exercises
-2 Clicks to exercise.
+2 Click magazine to exercise.
+
+![Day and Night Diagram](daynight.png)
+
+![List Diagram](list.png)
