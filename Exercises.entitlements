@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Exercises.entitlements
-   Exercises
-
-   Created by Alexander Neal on 3/7/24.
-   Copyright (c) 2024 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+    <key>com.apple.developer.applesignin</key>
+    <array>
+        <string>Default</string>
+    </array>
+    <key>com.apple.developer.activitykit.live-activity</key>
+    <true/>
+</dict>
 </plist>

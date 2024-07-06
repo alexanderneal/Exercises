@@ -16,45 +16,40 @@ struct Exercises_Widget: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.bottom){
-                    Text("Keep on Path")
+                    Text("In Session")
                 }
                 DynamicIslandExpandedRegion(.leading){
-                    Image(systemName: "location.north.fill")
+                    Image(systemName: "dumbbell")
                                 .resizable() // Make the image resizable
                                 .aspectRatio(contentMode: .fit) // Keep the aspect ratio
                                 .frame(width: 17, height: 17)
-                                .foregroundColor(.red)
+                                .foregroundColor(.white)
                 }
                 DynamicIslandExpandedRegion(.trailing){
-                   /* Image(systemName: "map")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit) // Keep the aspect ratio
-                        .frame(width: 17, height: 17)
-                        .foregroundColor(.red)
-                    */
+                   
                     Image(systemName: "map")
                         .aspectRatio(contentMode: .fit)
                         .padding(.trailing)
-                        .foregroundColor(.red)
+                        .foregroundColor(.white)
 
 
                 }
             } compactLeading: {
-                Image(systemName: "location.north.fill")
+                Image(systemName: "dumbbell")
                             .resizable() // Make the image resizable
                             .aspectRatio(contentMode: .fit) // Keep the aspect ratio
                             .frame(width: 17, height: 17)
-                            .foregroundColor(.red)
+                            .foregroundColor(.white)
 
 
             } compactTrailing: {
-                Text("N").foregroundColor(.red)
-            } minimal: {
-                Image(systemName: "location.north.fill")
+                Text(context.state.startNav, style: .timer)
+                .foregroundColor(.red)} minimal: {
+                Image(systemName: "dumbbell")
                             .resizable() // Make the image resizable
                             .aspectRatio(contentMode: .fit) // Keep the aspect ratio
                             .frame(width: 17, height: 17)
-                            .foregroundColor(.red)
+                            .foregroundColor(.white)
             }
 
         }

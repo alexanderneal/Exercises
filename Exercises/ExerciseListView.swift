@@ -19,6 +19,7 @@ extension Color {
 
 struct ExerciseListView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     @Binding var isDarkMode: Bool
     let category: Category
 
@@ -37,7 +38,7 @@ struct ExerciseListView: View {
             ScrollView {
                 LazyVStack(spacing: 20) {
                     ForEach(category.exercises) { exercise in
-                        NavigationLink(destination: ExerciseDetail(isDarkMode: $isDarkMode, exerciseID: exercise.id)) {
+                        NavigationLink(destination: ExerciseDetail(isDarkMode: $isDarkMode, exerciseID: exercise.id, imageName: exercise.imageName)) {
                             ExerciseCell(exercise: exercise)
                         }
                     }
@@ -49,6 +50,11 @@ struct ExerciseListView: View {
         .foregroundColor(isDarkMode ? .white : .black)
         .navigationTitle("")
         .navigationBarHidden(true)
+        .gesture(DragGesture().onEnded { gesture in
+            if gesture.translation.width > 50 {
+                presentationMode.wrappedValue.dismiss()
+            }
+        })
     }
 
     private var backButton: some View {
@@ -57,10 +63,7 @@ struct ExerciseListView: View {
         }) {
             Image(systemName: "arrow.left.circle.fill")
                 .font(.title)
-                .foregroundColor(.white)
+                .foregroundColor(isDarkMode ? .white : .gray)
         }
     }
 }
-
-// ... Rest of the ExerciseListView file ...
-

@@ -8,10 +8,10 @@
 import Foundation
 import ActivityKit
 
-struct ExercisesTrackingAttributes: ActivityAttributes{
+struct ExercisesTrackingAttributes: ActivityAttributes {
     public typealias ExercisesTrackingStatus = ContentState
-    
-    public struct ContentState: Codable, Hashable{
+
+    public struct ContentState: Codable, Hashable {
         var startNav: Date
     }
 }

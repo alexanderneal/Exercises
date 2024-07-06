@@ -10,7 +10,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Background gradient based on mode
                 LinearGradient(
                     gradient: Gradient(colors: [isDarkMode ? Color.black : Color.white.opacity(0.9)]),
                     startPoint: .top,
@@ -37,7 +36,6 @@ struct ContentView: View {
                         .padding(.horizontal)
                         .padding(.top, 20)
                     }
-                   
                     
                     Spacer()
                     
@@ -46,10 +44,10 @@ struct ContentView: View {
                             Text(isTrackingMeters ? "STOP" : "START")
                                 .fontWeight(.light)
                                 .foregroundColor(.white)
-                                .frame(width: 100, height: 50) // Adjusted size
+                                .frame(width: 100, height: 50)
                                 .background(Capsule().fill(isTrackingMeters ? Color.red.opacity(0.8) : Color.green.opacity(0.8)))
                         }
-                        .padding(.bottom, 20) // Push button down a bit
+                        .padding(.bottom, 20)
                         
                         HStack {
                             ModeToggleButton(symbolName: "sun.max.fill", isSelected: !isDarkMode, color: Color.yellow) {
@@ -64,7 +62,7 @@ struct ContentView: View {
                     
                     if let startNav = startNav {
                         Text("Started: \(startNav, style: .timer)")
-                            .padding(.bottom, 10) // Adds space between the "Started" text and the bottom of the view
+                            .padding(.bottom, 10)
                     }
                 }
             }
@@ -76,23 +74,41 @@ struct ContentView: View {
     
     func toggleTracking() {
         isTrackingMeters.toggle()
-
+        
         if isTrackingMeters {
             startNav = .now
-            
-            // Start live activity
-            let attributes = ExercisesTrackingAttributes()
-            let state = ExercisesTrackingAttributes.ContentState(startNav: .now)
-            activity = try? Activity<ExercisesTrackingAttributes>.request(attributes: attributes, contentState: state, pushType: nil)
+            startLiveActivity()
         } else {
-            // End live activity
-            guard let startNav = startNav else { return }
-            let state = ExercisesTrackingAttributes.ContentState(startNav: startNav)
-            Task {
-                await activity?.end(using: state, dismissalPolicy: .immediate)
-            }
-            self.startNav = nil
+            endLiveActivity()
+            startNav = nil
         }
+    }
+    
+    private func startLiveActivity() {
+        let attributes = ExercisesTrackingAttributes()
+        let state = ExercisesTrackingAttributes.ContentState(startNav: .now)
+        let content = ActivityContent(state: state, staleDate: nil)
+        
+        do {
+            activity = try Activity.request(
+                attributes: attributes,
+                content: content,
+                pushType: nil
+            )
+        } catch let error {
+            print("Error starting Live Activity: \(error.localizedDescription)")
+        }
+    }
+    
+    private func endLiveActivity() {
+        Task {
+            guard let activity = activity else { return }
+            let state = ExercisesTrackingAttributes.ContentState(startNav: startNav ?? .now)
+            let content = ActivityContent(state: state, staleDate: nil) // Define the content here
+
+            await activity.end(content, dismissalPolicy: .immediate) // Use the content variable
+        }
+        self.startNav = nil
     }
 }
 
@@ -135,9 +151,8 @@ struct ModeToggleButton: View {
                 .padding(10)
                 .background(isSelected ? color.opacity(0.2) : Color.gray.opacity(0.7))
                 .foregroundColor(isSelected ? color : .gray)
-                .clipShape(Circle()) // Make the button circular
+                .clipShape(Circle())
                 .animation(.bouncy, value: isSelected)
         }
     }
 }
-

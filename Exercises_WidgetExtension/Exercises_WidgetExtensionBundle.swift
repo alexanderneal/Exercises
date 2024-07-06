@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct Exercises_WidgetExtensionBundle: WidgetBundle {
     var body: some Widget {
-        Exercises_WidgetExtension()
+        
         Exercises_WidgetExtensionLiveActivity()
     }
 }
