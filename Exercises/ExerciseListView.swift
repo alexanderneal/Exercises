@@ -34,6 +34,7 @@ struct ExerciseListView: View {
             Text(category.rawValue)
                 .font(.title)
                 .padding(.bottom, 20)
+                
 
             ScrollView {
                 LazyVStack(spacing: 20) {
