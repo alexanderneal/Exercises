@@ -1,6 +1,4 @@
 # Exercises
-2 Click magazine to exercise.
+2 Taps to start exercising.
 
-![Day and Night Diagram](daynight.png)
-
-![List Diagram](list.png)
+![exercises.gif](exercises.gif)
