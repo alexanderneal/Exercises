@@ -104,7 +104,10 @@ It will be required to use Xcode or an IDE, for which SwiftUI and Swift is compa
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- USAGE  -->
+## Usage
 
+Whenever you forget about your exercises or just want a casual workout, rely on this exercise catalog.
 
 <!-- LICENSE -->
 ## License
