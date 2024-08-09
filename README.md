@@ -35,8 +35,6 @@
   <p align="center">
 2-Taps and Start exercising
     <br />
-    <a href="https://github.com/alexanderneal/Exercises"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/alexanderneal/Exercises">View Demo</a>
     ·
