@@ -33,7 +33,7 @@
 <h3 align="center">Exercises</h3>
 
   <p align="center">
-2-Taps and Start exercising
+2-Taps to start Exercising.
     <br />
     <br />
     <a href="https://github.com/alexanderneal/Exercises">View Demo</a>
