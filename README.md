@@ -121,9 +121,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-* [![Swift][Swift.org]][Swift-url]
-
 * [![LinkedIn][linkedin-shield]][alexander-linkedin]
 * [![Outlook][outlook-shield]][alexander-outlook]
 * [![Github][github-shield]][alexander-github]
