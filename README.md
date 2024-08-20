@@ -82,8 +82,8 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is an example of instructions on setting up your project locally.
+To get a local copy running follow these simple example steps.
 
 ### Prerequisites
 
@@ -100,6 +100,7 @@ It will be required to use Xcode or an IDE, for which SwiftUI and Swift is compa
    ```sh
    git clone https://github.com/alexanderneal/Exercises
    ```
+3. Compile the project & run it.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -121,7 +122,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alexander Neal - alexander.nealyague@
+Alexander Neal - alexander.nealyague@usp.ceu.es
 
 Project Link: https://github.com/alexanderneal/Exercises
 
