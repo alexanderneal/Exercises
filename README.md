@@ -123,6 +123,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Alexander Neal - alexander.nealyague@usp.ceu.es
+LinkedIn - https://www.linkedin.com/in/alexandernealyag%C3%BCe/
 
 Project Link: https://github.com/alexanderneal/Exercises
 
