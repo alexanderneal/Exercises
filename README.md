@@ -121,9 +121,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-* [![LinkedIn][linkedin-shield][alexander-linkedin]]
-* [![Outlook][outlook-shield][alexander-outlook]]
-* [![Github][github-shield][alexander-github]]
+
+* [![Swift][Swift.org]][Swift-url]
+
+* [![LinkedIn][linkedin-shield]][alexander-linkedin]
+* [![Outlook][outlook-shield]][alexander-outlook]
+* [![Github][github-shield]][alexander-github]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
