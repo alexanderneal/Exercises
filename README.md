@@ -76,7 +76,7 @@
 
 ### Built With
 
-* [![Swift][Swift.org]][Swift-url]
+[![Swift][Swift.org]][Swift-url]
 
 
 <!-- GETTING STARTED -->
