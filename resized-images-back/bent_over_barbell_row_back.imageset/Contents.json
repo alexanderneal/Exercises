@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "bent_over_barbell_row_back.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "bent_over_barbell_row_back 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "bent_over_barbell_row_back 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
