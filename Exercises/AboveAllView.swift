@@ -23,6 +23,7 @@ struct AboveAllView: View {
                     Text("Pilates")
                 }
         }
+        
     }
 }
 #Preview {

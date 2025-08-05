@@ -67,3 +67,7 @@ struct ExerciseListView: View {
         }
     }
 }
+
+#Preview {
+    ExerciseListView(category: .arms)
+}

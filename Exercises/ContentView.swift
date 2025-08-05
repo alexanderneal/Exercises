@@ -7,6 +7,7 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 VStack {
+                    TitleAndDateView()
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(Category.allCases, id: \.self) { category in
@@ -28,8 +29,7 @@ struct ContentView: View {
 }
 
 struct TitleAndDateView: View {
-    
-    
+        
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(formattedDate())
@@ -50,23 +50,7 @@ struct TitleAndDateView: View {
     }
 }
 
-struct ModeToggleButton: View {
-    let symbolName: String
-    let isSelected: Bool
-    let color: Color
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            Image(systemName: symbolName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 24, height: 24)
-                .padding(10)
-                .background(isSelected ? color.opacity(0.2) : Color.gray.opacity(0.7))
-                .foregroundColor(isSelected ? color : .gray)
-                .clipShape(Circle())
-                .animation(.bouncy, value: isSelected)
-        }
-    }
+
+#Preview{
+    ContentView()
 }
