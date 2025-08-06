@@ -72,7 +72,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![description.gif](description.gif)
+![descriptionGlass.gif](descriptionGlass.gif)
 
 ### Built With
 
