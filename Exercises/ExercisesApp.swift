@@ -6,7 +6,7 @@ struct ExercisesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AboveAllView()
         }
     }
 }
