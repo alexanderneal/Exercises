@@ -26,7 +26,7 @@ struct ExerciseListView: View {
     var body: some View {
         VStack {
             HStack {
-                backButton
+                
                 Spacer()
             }
             .padding(.horizontal)
@@ -49,23 +49,12 @@ struct ExerciseListView: View {
         }
         
         .navigationTitle("")
-        .navigationBarHidden(true)
         .gesture(DragGesture().onEnded { gesture in
             if gesture.translation.width > 50 {
                 presentationMode.wrappedValue.dismiss()
             }
         })
-    }
-
-    private var backButton: some View {
-        Button(action: {
-            presentationMode.wrappedValue.dismiss()
-        }) {
-            Image(systemName: "arrow.left.circle.fill")
-                .font(.title)
-                
-        }
-    }
+    }    
 }
 
 #Preview {

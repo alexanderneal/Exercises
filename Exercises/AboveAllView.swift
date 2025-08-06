@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AboveAllView: View {
     
-    
     var body: some View {
         TabView {
             ContentView()

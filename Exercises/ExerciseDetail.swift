@@ -5,16 +5,6 @@ struct ExerciseDetail: View {
     let exerciseID: Int
     let imageName: String
     
-    
-    private var backButton: some View {
-        Button(action: {
-            presentationMode.wrappedValue.dismiss()
-        }) {
-            Image(systemName: "arrow.left.circle.fill")
-                .font(.title)
-        }
-    }
-    
     var body: some View {
         ZStack {
             VStack {
@@ -25,7 +15,5 @@ struct ExerciseDetail: View {
             }
         }
         .navigationBarTitle(Text("Exercise Detail"), displayMode: .inline)
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: backButton)
     }
 }
