@@ -10,3 +10,8 @@ struct ExercisesApp: App {
         }
     }
 }
+
+#Preview{
+    AboveAllView()
+}
+
