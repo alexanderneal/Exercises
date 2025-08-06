@@ -32,7 +32,7 @@ struct ExerciseListView: View {
             .padding(.horizontal)
 
             Text(category.rawValue)
-                .font(.title)
+                .font(.largeTitle)
                 .padding(.bottom, 20)
                 
 
@@ -48,7 +48,6 @@ struct ExerciseListView: View {
             }
         }
         
-        .navigationTitle("")
         .gesture(DragGesture().onEnded { gesture in
             if gesture.translation.width > 50 {
                 presentationMode.wrappedValue.dismiss()
