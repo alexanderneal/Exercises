@@ -21,14 +21,32 @@ struct PilatesListView: View {
                         
                         NavigationLink(destination: PilatesDetailView(pilates: Pilates(imageName: pilate.imageName, title: pilate.title, description: pilate.description)),
                                        label: {
-                            Image(pilate.imageName)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 80)
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
-                                .padding(.vertical, 4)
                             
-                            Text(pilate.title)
+                            ZStack {
+                                HStack{
+                                    Image(pilate.imageName)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 80)
+                                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                                        .padding(.vertical, 4)
+
+                                    Text(pilate.title)
+                                    
+                                }.font(.system(.headline))
+                                    .frame(maxWidth: .infinity, minHeight: 100, alignment: .leading)
+                                    .padding(.leading)
+                                    .background(
+                                        ConcentricShape()
+                                            .fill(Color.secondary.opacity(0.2))
+                                    )
+                                    .overlay(
+                                        ConcentricShape()
+                                            .stroke(Color.secondary, lineWidth: 2)
+                                        
+                                    )
+                                    .clipShape(ConcentricShape())
+                            }
                         })
                     }.listStyle(.inset)
                 }
