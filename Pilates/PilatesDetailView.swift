@@ -38,6 +38,7 @@ struct PilatesDetailView: View {
             Text("About \(pilates.title)")
                 .font(.title2)
                 .padding(.bottom)
+            
             Text(pilates.description)
         }
         .padding()

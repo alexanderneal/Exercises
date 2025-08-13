@@ -6,94 +6,94 @@ struct ExerciseCell: View {
     var body: some View {
         HStack {
             //Arms
-            if exercise.imageName == "bicep curl flat grab" {
-                Image("bicep curl flat grab")
-            } else if exercise.imageName == "bicep curl neutral grab" {
-                Image("bicep curl neutral grab")
-            } else if exercise.imageName == "Dumbbell_lateral_raises_arms" {
-                Image("Dumbbell_lateral_raises_arms")
-            } else if exercise.imageName == "shoulder_press_arms" {
-                Image("shoulder_press_arms")
-            } else if exercise.imageName == "shoulders_arms" {
-                Image("shoulders_arms")
-            } else if exercise.imageName == "stand up bicep curl" {
-                Image("stand up bicep curl")
-            } else if exercise.imageName == "tricep_arms" {
-                Image("tricep_arms")
-            } else if exercise.imageName == "triceps_arm" {
-                Image("triceps_arm")
+            if exercise.imageName == "Bicep curl flat grab" {
+                Image("Bicep curl flat grab")
+            } else if exercise.imageName == "Bicep curl neutral grab" {
+                Image("Bicep curl neutral grab")
+            } else if exercise.imageName == "Dumbbell lateral raises arms" {
+                Image("Dumbbell lateral raises arms")
+            } else if exercise.imageName == "Shoulder press arms" {
+                Image("Shoulder press arms")
+            } else if exercise.imageName == "Shoulders arms" {
+                Image("Shoulders arms")
+            } else if exercise.imageName == "Stand up bicep curl" {
+                Image("Stand up bicep curl")
+            } else if exercise.imageName == "Tricep arms" {
+                Image("Tricep arms")
+            } else if exercise.imageName == "Triceps arm" {
+                Image("Triceps arm")
             }
             
             //Pecho
-           else if exercise.imageName == "bench_press_chest" {
-                Image("bench_press_chest")
-            } else if exercise.imageName == "chest_dips_pecho" {
-                Image("chest_dips_pecho")
-            } else if exercise.imageName == "forward_chest" {
-                Image("forward_chest")
-            } else if exercise.imageName == "Incline_dumbbells_press" {
-                Image("Incline_dumbbells_press")
-            } else if exercise.imageName == "open_fly_chest" {
-                Image("open_fly_chest")
-            } else if exercise.imageName == "opening_chest" {
-                Image("opening_chest")
-            } else if exercise.imageName == "push_up_chest" {
-                Image("push_up_chest")
+           else if exercise.imageName == "Bench press chest" {
+                Image("Bench press chest")
+            } else if exercise.imageName == "Chest dips pecho" {
+                Image("Chest dips pecho")
+            } else if exercise.imageName == "Forward chest" {
+                Image("Forward chest")
+            } else if exercise.imageName == "Incline dumbbells press" {
+                Image("Incline dumbbells press")
+            } else if exercise.imageName == "Open fly chest" {
+                Image("Open fly chest")
+            } else if exercise.imageName == "Opening chest" {
+                Image("Opening chest")
+            } else if exercise.imageName == "Push up chest" {
+                Image("Push up chest")
             }
             
             //Back
-            else if exercise.imageName == "bend_over_dumbells_row_back" {
-                Image("bend_over_dumbells_row_back")
-            } else if exercise.imageName == "bent_over_barbell_row_back" {
-                Image("bent_over_barbell_row_back")
-            } else if exercise.imageName == "Lat_pulldown_back" {
-                Image("Lat_pulldown_back")
-            } else if exercise.imageName == "One_Arm_Dumbbell_Row_back" {
-                Image("One_Arm_Dumbbell_Row_back")
-            } else if exercise.imageName == "press_back" {
-                Image("press_back")
-            } else if exercise.imageName == "pull_back" {
-                Image("pull_back")
-            } else if exercise.imageName == "Pullup_back" {
-                Image("Pullup_back")
-            }else if exercise.imageName == "row_back" {
-                Image("row_back")
+            else if exercise.imageName == "Bend over dumbells row back" {
+                Image("Bend over dumbells row back")
+            } else if exercise.imageName == "Bent over barbell row back" {
+                Image("Bent over barbell row back")
+            } else if exercise.imageName == "Lat pulldown back" {
+                Image("Lat pulldown back")
+            } else if exercise.imageName == "One Arm Dumbbell Row back" {
+                Image("One Arm Dumbbell Row back")
+            } else if exercise.imageName == "Press back" {
+                Image("Press back")
+            } else if exercise.imageName == "Pull back" {
+                Image("Pull back")
+            } else if exercise.imageName == "Pullup back" {
+                Image("Pullup back")
+            }else if exercise.imageName == "Row back" {
+                Image("Row back")
             }
         
             //Legs
-             else if exercise.imageName == "squats" {
-                Image("squats")
-            } else if exercise.imageName == "leg_extension" {
-                Image("leg_extension")
-            } else if exercise.imageName == "leg_pressdown" {
-                Image("leg_pressdown")
-            } else if exercise.imageName == "steps_legs" {
-                Image("steps_legs")
-            } else if exercise.imageName == "down_press_legs" {
-                Image("down_press_legs")
-            } else if exercise.imageName == "pull_down_legs" {
-                Image("pull_down_legs")
-            } else if exercise.imageName == "leg_curls" {
-                Image("leg_curls")
+             else if exercise.imageName == "Squats" {
+                Image("Squats")
+            } else if exercise.imageName == "Leg extension" {
+                Image("Leg extension")
+            } else if exercise.imageName == "Leg pressdown" {
+                Image("Leg pressdown")
+            } else if exercise.imageName == "Steps legs" {
+                Image("Steps legs")
+            } else if exercise.imageName == "Down press legs" {
+                Image("Down press legs")
+            } else if exercise.imageName == "Pull down legs" {
+                Image("Pull down legs")
+            } else if exercise.imageName == "Leg curls" {
+                Image("Leg curls")
                 
             //Abs
             }
-            else if exercise.imageName == "plank" {
-                Image("plank")
-            } else if exercise.imageName == "cable_down_abs" {
-                Image("cable_down_abs")
-            } else if exercise.imageName == "abs_workout" {
-                Image("abs_workout")
-            } else if exercise.imageName == "decline_abs" {
-                Image("decline_abs")
-            } else if exercise.imageName == "hanging_leg_raise_ab_exercise" {
-                Image("hanging_leg_raise_ab_exercise")
-            } else if exercise.imageName == "rise_up_abs" {
-                Image("rise_up_abs")
-            } else if exercise.imageName == "sat_down_skipping_abs" {
-                Image("sat_down_skipping_abs")
-            } else if exercise.imageName == "side_plank" {
-                Image("side_plank")
+            else if exercise.imageName == "Plank" {
+                Image("Plank")
+            } else if exercise.imageName == "Cable down abs" {
+                Image("Cable down abs")
+            } else if exercise.imageName == "Abs workout" {
+                Image("Abs workout")
+            } else if exercise.imageName == "Decline abs" {
+                Image("Decline abs")
+            } else if exercise.imageName == "Hanging leg raise ab exercise" {
+                Image("Hanging leg raise ab exercise")
+            } else if exercise.imageName == "Rise up abs" {
+                Image("Rise up abs")
+            } else if exercise.imageName == "Sat down skipping abs" {
+                Image("Sat down skipping abs")
+            } else if exercise.imageName == "Side plank" {
+                Image("Side plank")
             }
             
             Text(exercise.details)

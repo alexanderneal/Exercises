@@ -39,7 +39,7 @@ struct ExerciseListView: View {
             ScrollView {
                 LazyVStack(spacing: 20) {
                     ForEach(category.exercises) { exercise in
-                        NavigationLink(destination: ExerciseDetail( exerciseID: exercise.id, imageName: exercise.imageName)) {
+                        NavigationLink(destination: ExerciseDetail(exercise: exercise)) {
                             ExerciseCell(exercise: exercise)
                         }
                     }

@@ -16,7 +16,7 @@ struct AboveAllView: View {
                     Image(systemName: "dumbbell")
                     Text("Weights")
                 }
-               PilatesListView()
+            PilatesListView()
                 .tabItem{
                     Image(systemName: "figure.cooldown")
                     Text("Pilates")
@@ -25,6 +25,7 @@ struct AboveAllView: View {
         
     }
 }
+
 #Preview {
     AboveAllView()
 }
