@@ -66,9 +66,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![descriptionGlass.gif](descriptionGlass.gif)
-
+<p align=center
+  <img src="descriptionGlass.gif" alt="App demo" width="300"/>
+</p>
 ### Built With
 
 [![Swift][Swift.org]][Swift-url]
