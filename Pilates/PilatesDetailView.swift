@@ -11,8 +11,7 @@ struct PilatesDetailView: View {
             .scaledToFill()
             .frame(maxWidth: .infinity)
             .ignoresSafeArea(edges: .top)
-            .padding(.bottom)
-        
+                    
         VStack(alignment: .leading) {
             Text(pilates.title)
                 .font(.title)
@@ -32,11 +31,13 @@ struct PilatesDetailView: View {
                 .padding(.bottom)
             
             Text(pilates.description)
+                .padding(.bottom)
+                .padding(.bottom)
         }
         .padding()
     }
 }
 
 #Preview {
-    PilatesDetailView(pilates: PilatesList.topPilates[0])
+    PilatesDetailView(pilates: PilatesList.topPilates[1])
 }
