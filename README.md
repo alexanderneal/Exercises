@@ -36,11 +36,7 @@
 2-Taps to start Exercising.
     <br />
     <br />
-    <a href="https://github.com/alexanderneal/Exercises">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    
   </p>
 </div>
 
@@ -72,7 +68,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![descriptionGlass.gif](descriptionGlass.gif)
+<p align="center">
+  <img src="descriptionGlass.gif" alt="App demo">
+</p>
+
 
 ### Built With
 
