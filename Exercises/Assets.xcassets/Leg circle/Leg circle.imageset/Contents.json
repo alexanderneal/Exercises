@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "leg_circle@1x.jpg",
+      "filename" : "Leg Circle@1x 1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "leg_circle@2x.jpg",
+      "filename" : "Leg Circle@1x 2.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "leg_circle@3x.jpg",
+      "filename" : "Leg Circle@1x 3.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

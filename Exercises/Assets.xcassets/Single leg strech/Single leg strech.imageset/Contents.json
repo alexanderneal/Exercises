@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "single_leg_strech@1x.jpg",
+      "filename" : "Stretch@1x 1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "single_leg_strech@2x.jpg",
+      "filename" : "Stretch@1x 2.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "single_leg_strech@3x.jpg",
+      "filename" : "Stretch@1x 3.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
