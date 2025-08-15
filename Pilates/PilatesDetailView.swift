@@ -7,10 +7,11 @@ struct PilatesDetailView: View {
     var body: some View {
             
             Image(pilates.imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(maxWidth: .infinity)
-                .ignoresSafeArea()
+            .resizable()
+            .scaledToFill()
+            .frame(maxWidth: .infinity)
+            .ignoresSafeArea(edges: .top)
+            .padding(.bottom)
         
         VStack(alignment: .leading) {
             Text(pilates.title)
