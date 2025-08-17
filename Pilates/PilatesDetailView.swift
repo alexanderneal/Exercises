@@ -39,5 +39,5 @@ struct PilatesDetailView: View {
 }
 
 #Preview {
-    PilatesDetailView(pilates: PilatesList.topPilates[1])
+    PilatesDetailView(pilates: PilatesList.topPilates[0])
 }
