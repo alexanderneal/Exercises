@@ -8,20 +8,36 @@ struct ExerciseCell: View {
             //Arms
             if exercise.imageName == "Bicep curl flat grab" {
                 Image("Bicep curl flat grab")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Bicep curl neutral grab" {
                 Image("Bicep curl neutral grab")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Dumbbell lateral raises arms" {
                 Image("Dumbbell lateral raises arms")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Shoulder press arms" {
                 Image("Shoulder press arms")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Shoulders arms" {
                 Image("Shoulders arms")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Stand up bicep curl" {
                 Image("Stand up bicep curl")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Tricep arms" {
                 Image("Tricep arms")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Triceps arm" {
                 Image("Triceps arm")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             }
             
             //Pecho
@@ -44,20 +60,36 @@ struct ExerciseCell: View {
             //Back
             else if exercise.imageName == "Bend over dumbells row back" {
                 Image("Bend over dumbells row back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Bent over barbell row back" {
                 Image("Bent over barbell row back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Lat pulldown back" {
                 Image("Lat pulldown back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "One Arm Dumbbell Row back" {
                 Image("One Arm Dumbbell Row back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Press back" {
                 Image("Press back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Pull back" {
                 Image("Pull back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Pullup back" {
                 Image("Pullup back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             }else if exercise.imageName == "Row back" {
                 Image("Row back")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             }
         
             //Legs
@@ -80,20 +112,36 @@ struct ExerciseCell: View {
             }
             else if exercise.imageName == "Plank" {
                 Image("Plank")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Cable down abs" {
                 Image("Cable down abs")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Abs workout" {
                 Image("Abs workout")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Decline abs" {
                 Image("Decline abs")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Hanging leg raise ab exercise" {
                 Image("Hanging leg raise ab exercise")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Rise up abs" {
                 Image("Rise up abs")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Sat down skipping abs" {
                 Image("Sat down skipping abs")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             } else if exercise.imageName == "Side plank" {
                 Image("Side plank")
+                    .resizable()
+                    .frame(width: 150, height: 150)
             }
             
             Text(exercise.details)
@@ -105,3 +153,7 @@ struct ExerciseCell: View {
         .cornerRadius(10)
     }
 }
+
+//#Preview {
+//    ExerciseCell(exercise: Exercise)
+//}
