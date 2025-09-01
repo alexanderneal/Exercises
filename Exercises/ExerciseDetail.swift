@@ -5,23 +5,21 @@ struct ExerciseDetail: View {
     var exercise: Exercise
     
     var body: some View {
-        ZStack {
+        
             VStack {
-                Spacer()
+                
                 Image(exercise.imageName)
                     .resizable()
-                    .scaledToFit()
-                    .frame(height: 250)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .padding(.vertical, 10)
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity)
+                    .ignoresSafeArea(edges: .top)
                 
-                Text(exercise.imageName)
-                    .font(.subheadline)
                 
                 Spacer()
                 
                 HStack {
                     Text("Exercise")
+                        .padding(.horizontal)
                     Spacer()
                 }
                 .font(.subheadline)
@@ -33,12 +31,14 @@ struct ExerciseDetail: View {
                     .frame(alignment: .leading)
                     .font(.title2)
                     .padding(.top)
+                    .padding(.horizontal)
                     .frame(maxWidth: .infinity, alignment: .topLeading)
                 
                 Text(exercise.description)
+                    .padding(.horizontal)
                 
-            }.padding()
-        }.navigationBarTitle(Text("Exercise Detail"), displayMode: .inline)
+            }
+        
     }
 }
 
