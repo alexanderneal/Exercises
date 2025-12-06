@@ -15,6 +15,7 @@ struct ExerciseDetail: View {
                     .ignoresSafeArea(edges: .top)
                 
                 
+                
                 Spacer()
                 
                 HStack {
@@ -43,5 +44,5 @@ struct ExerciseDetail: View {
 }
 
 #Preview {
-    ExerciseDetail(exercise: Exercise(id: 1, details: "1 set x 12 reps.", imageName: "Bicep curl flat grab", description: "Stand with your feet shoulder width. Hold the barbell with an underhand grip. Keep your elbows close to your body, engage your core, and curl the weight up towards your chest while keeping your upper arms stationary"))
+    ExerciseDetail(exercise: Exercise(id: 2, details: "1 set x 10 reps.", imageName: "Bent over barbell row back",description: "Keeping your back straight, and elbows close to your body, row the barbell towards your chest, squeezing your back muscles. Slowly lower to the starting position"))
 }
