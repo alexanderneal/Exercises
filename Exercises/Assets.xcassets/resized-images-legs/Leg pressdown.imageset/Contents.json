@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Leg pressdown 1.png",
+      "filename" : "Leg pressdown 2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Leg pressdown 2.png",
+      "filename" : "Leg pressdown 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Leg pressdown.png",
+      "filename" : "Leg pressdown.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
