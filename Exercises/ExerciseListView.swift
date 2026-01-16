@@ -20,7 +20,8 @@ struct ExerciseListView: View {
                 }
             }
         }
-        .navigationBarTitleDisplayMode(.inline) 
+        .navigationBarTitleDisplayMode(.inline)
+        .frame(alignment:.top)
     }
 }
 
