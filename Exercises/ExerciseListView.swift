@@ -39,8 +39,9 @@ struct ExerciseCardRow: View {
 
             Text(exercise.details)
                 .frame(alignment: .trailing)
+                
         }
-        .font(.system(.headline))
+        .fontWeight(.medium)
         .frame(maxWidth: .infinity, minHeight: 100, alignment: .leading)
         .padding(.leading)
         .background(
@@ -81,7 +82,7 @@ struct TitleAndDateViewerForExercises: View {
     
     #Preview {
         NavigationStack {
-            ExerciseListView(category: .legs)
+            ExerciseListView(category: .abs)
         }
     }
 
