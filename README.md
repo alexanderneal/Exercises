@@ -69,7 +69,7 @@
 ## About The Project
 
 <p align="center">
-  <img src="descriptionGlass.gif" alt="App demo">
+  <img src="descriptionGlass.gif" alt="App demo" width="300">
 </p>
 
 
