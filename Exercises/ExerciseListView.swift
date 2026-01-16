@@ -1,61 +1,87 @@
 import SwiftUI
 
-extension Color {
-    init(hex: String) {
-        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
-        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
-        
-        var rgb: UInt64 = 0
-        
-        Scanner(string: hexSanitized).scanHexInt64(&rgb)
-        
-        let red = Double((rgb >> 16) & 0xFF) / 255.0
-        let green = Double((rgb >> 8) & 0xFF) / 255.0
-        let blue = Double(rgb & 0xFF) / 255.0
-        
-        self.init(red: red, green: green, blue: blue)
-    }
-}
-
 struct ExerciseListView: View {
-    @Environment(\.presentationMode) var presentationMode
-    @Environment(\.colorScheme) var colorScheme
-    
+    @Environment(\.dismiss) private var dismiss
     let category: Category
 
     var body: some View {
-        VStack {
-            HStack {
-                
-                Spacer()
-            }
-            .padding(.horizontal)
-
-            Text(category.rawValue)
-                .font(.largeTitle)
-                .padding(.bottom, 20)
-                
-
+        VStack() {
+            TitleAndDateViewerForExercises()
             ScrollView {
-                LazyVStack(spacing: 20) {
+                LazyVStack {
                     ForEach(category.exercises) { exercise in
-                        NavigationLink(destination: ExerciseDetail(exercise: exercise)) {
-                            ExerciseCell(exercise: exercise)
+                        NavigationLink {
+                            ExerciseDetail(exercise: exercise)
+                        } label: {
+                            ExerciseCardRow(exercise: exercise)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
-                .padding(.horizontal)
             }
         }
-        
-        .gesture(DragGesture().onEnded { gesture in
-            if gesture.translation.width > 50 {
-                presentationMode.wrappedValue.dismiss()
-            }
-        })
-    }    
+        .navigationBarTitleDisplayMode(.inline) 
+    }
 }
 
-#Preview {
-    ExerciseListView(category: .arms)
+
+struct ExerciseCardRow: View {
+    let exercise: Exercise
+
+    var body: some View {
+        HStack {
+            Image(exercise.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(height: 80)
+                .clipShape(RoundedRectangle(cornerRadius: 5))
+                .padding(.vertical)
+
+            Text(exercise.details)
+                .frame(alignment: .trailing)
+        }
+        .font(.system(.headline))
+        .frame(maxWidth: .infinity, minHeight: 100, alignment: .leading)
+        .padding(.leading)
+        .background(
+            ConcentricShape()
+                .fill(Color.secondary.opacity(0.2))
+        )
+        .overlay(
+            ConcentricShape()
+                .stroke(Color.secondary, lineWidth: 2)
+        )
+        .clipShape(ConcentricShape())
+        .padding(.horizontal, 15)
+        .padding(.vertical, 3)
+    }
 }
+
+struct TitleAndDateViewerForExercises: View {
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(formattedDate())
+                .font(.system(size: 13))
+                .foregroundColor(.gray)
+                .padding(.top, 20)
+            Text("Exercises")
+                .font(.title)
+                .bold()
+        }
+    }
+    
+    private func formattedDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, d MMM"
+        dateFormatter.locale = Locale.current
+        return dateFormatter.string(from: Date()).uppercased()
+    }
+}
+    
+    #Preview {
+        NavigationStack {
+            ExerciseListView(category: .legs)
+        }
+    }
+

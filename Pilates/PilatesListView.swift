@@ -66,7 +66,7 @@ struct TitleAndDateViewer: View {
                 .font(.system(size: 13))
                 .foregroundColor(.gray)
                 .padding(.top, 20)
-            Text("Exercises")
+            Text("Pilates")
                 .font(.title)
                 .bold()
         }
