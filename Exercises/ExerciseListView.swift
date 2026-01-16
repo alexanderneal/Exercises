@@ -62,7 +62,7 @@ struct ExerciseCardRow: View {
 struct TitleAndDateViewerForExercises: View {
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .center, spacing: 4) {
             Text(formattedDate())
                 .font(.system(size: 13))
                 .foregroundColor(.gray)

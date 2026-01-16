@@ -8,6 +8,8 @@ struct ContentView: View {
             ZStack {
                 VStack {
                     TitleAndDateView()
+                        .frame(maxWidth: .infinity)
+                        .multilineTextAlignment(.center)
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
                             ForEach(Category.allCases, id: \.self) { category in
@@ -31,15 +33,19 @@ struct ContentView: View {
 struct TitleAndDateView: View {
         
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .center, spacing: 4) {
             Text(formattedDate())
                 .font(.system(size: 13))
                 .foregroundColor(.gray)
                 .padding(.top, 20)
+                .frame(maxWidth: .infinity, alignment: .center)
             Text("Exercises")
                 .font(.title)
                 .bold()
+                .frame(maxWidth: .infinity, alignment: .center)
         }
+        .frame(maxWidth: .infinity)
+        .multilineTextAlignment(.center)
     }
     
     private func formattedDate() -> String {
