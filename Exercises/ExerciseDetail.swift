@@ -13,8 +13,8 @@ struct ExerciseDetail: View {
                 .scaledToFill()
                 .frame(maxWidth: .infinity)
                 .ignoresSafeArea(edges: .top)
-                .padding(.bottom)
-                .padding(.bottom)
+                
+                
             
         VStack {
             Text(exercise.imageName)
