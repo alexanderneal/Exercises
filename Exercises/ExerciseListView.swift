@@ -42,7 +42,7 @@ struct ExerciseCardRow: View {
                 .frame(alignment: .trailing)
                 
         }
-        .fontWeight(.medium)
+        .fontWeight(.regular)
         .frame(maxWidth: .infinity, minHeight: 100, alignment: .leading)
         .padding(.leading)
         .background(
