@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Open fly chest 1.png",
+      "filename" : "fly 3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Open fly chest 2.png",
+      "filename" : "fly 2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Open fly chest.png",
+      "filename" : "fly 1.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
