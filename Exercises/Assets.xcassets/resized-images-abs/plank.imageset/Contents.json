@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Plank 1.jpeg",
+      "filename" : "Plank.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Plank 2.jpeg",
+      "filename" : "Plank 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Plank 3.jpeg",
+      "filename" : "Plank 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
