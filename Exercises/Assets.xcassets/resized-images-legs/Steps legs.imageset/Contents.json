@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Steps legs 2.jpg",
+      "filename" : "Steps legs.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Steps legs 1.jpg",
+      "filename" : "Steps legs 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Steps legs.jpg",
+      "filename" : "Steps legs 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

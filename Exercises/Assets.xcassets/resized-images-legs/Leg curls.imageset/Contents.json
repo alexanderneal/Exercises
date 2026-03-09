@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Leg curls 2.jpg",
+      "filename" : "Leg curls.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Leg curls 1.jpg",
+      "filename" : "Leg curls 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Leg curls.jpg",
+      "filename" : "Leg curls 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Squats 2.jpg",
+      "filename" : "Squats 1.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Squats 1.jpg",
+      "filename" : "Squats 2.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Squats.jpg",
+      "filename" : "Squats 3.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
