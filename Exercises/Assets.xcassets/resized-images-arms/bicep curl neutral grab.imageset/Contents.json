@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Bicep curl neutral grab 2.png",
+      "filename" : "Bicep curl neutral grab.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Bicep curl neutral grab 1.png",
+      "filename" : "Bicep curl neutral grab 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Bicep curl neutral grab.png",
+      "filename" : "Bicep curl neutral grab 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
