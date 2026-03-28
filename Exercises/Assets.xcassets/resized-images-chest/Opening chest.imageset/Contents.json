@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Opening chest.png",
+      "filename" : "Opening chest 1.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Opening chest 1.png",
+      "filename" : "Opening chest 2.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Opening chest 2.png",
+      "filename" : "Opening chest 3.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
