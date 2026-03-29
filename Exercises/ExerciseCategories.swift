@@ -3,41 +3,41 @@ extension Category {
         switch self {
         case .arms:
             return [
-                Exercise(id: 1, details: "1 set x 12 reps", imageName: "Bicep curl flat grab", description: "Keep your elbows close to your body, engage your core, and curl the weight up towards youm Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchr chest while keeping your upper arms stationary"),
+                Exercise(id: 1, details: "1 set x 12 reps", imageName: "Bicep curl flat grab", description: "Stand with feet shoulder-width apart, knees slightly bent, and grip the bar with palms facing up. Exhale as you curl the bar toward your chest, keeping your elbows pinned to your ribs to avoid swinging. Inhale and lower the weight slowly to full extension, maintaining a neutral spine and a braced core."),
                 
-                Exercise(id: 2, details: "1 set x 12 reps", imageName: "Bicep curl neutral grab", description: "Hold a dumbbell with your hand in a neutral grab. Keep your elbow close to your body. "),
+                Exercise(id: 2, details: "1 set x 12 reps", imageName: "Bicep curl neutral grab", description: " Standing tall with feet shoulder-width apart, hold the dumbbells at your sides with palms facing your thighs. Exhale as you rotate your wrists and curl the weights toward your shoulders, keeping your elbows tucked tightly to your ribs. Inhale and lower the weights with a slow, controlled motion to ensure you are not using momentum to drop the load."),
                 
-                Exercise(id: 3, details: "1 sets x 10 reps", imageName: "Dumbbell lateral raises arms", description: "Hold a dumbbell in each hand by your sides, palms facing forward. Inhale and lower the weight with control back to the starting position."),
+                Exercise(id: 3, details: "1 sets x 10 reps", imageName: "Dumbbell lateral raises arms", description: "Stand with feet hip-width apart and a slight bend in your knees while holding dumbbells at your sides. Exhale as you lift the weights out to the side until they reach shoulder height, keeping a slight bend in your elbows. Inhale and lower the weights slowly to the starting position without letting them touch your thighs to maintain tension."),
                 
-                Exercise(id: 4, details: "1 set x 10 reps", imageName: "Shoulder press arms", description: "Uplift maintaining neutral spine. Elbows inline with hips. Push straight up. Come down to 90º."),
+                Exercise(id: 4, details: "1 set x 10 reps", imageName: "Shoulder press arms", description: "Sit or stand tall with your core braced and feet planted firmly while holding dumbbells at shoulder height. Exhale as you press the weights directly overhead until your arms are straight but not locked at the elbows. Inhale and lower the weights slowly back to the starting position to keep constant tension on the deltoids."),
                 
-                Exercise(id: 5, details: "1 set to failiure", imageName: "Shoulders arms", description: "Stand with the bar on your front shoulders. Lock your elbows at the top, and shrug your shoulders to the ceiling."),
+                Exercise(id: 5, details: "1 set to failiure", imageName: "Shoulders arms", description: "Sit or stand tall with your core braced and feet planted firmly while holding dumbbells at shoulder height. Exhale as you press the weights directly overhead until your arms are straight but not locked at the elbows. Inhale and lower the weights slowly back to the starting position to keep constant tension on the deltoids."),
                 
-                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Stand up bicep curl", description: "Stand with feet shoulder-width apart, holding a dumbbell in each hand with palms facing forward. "),
+                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Stand up bicep curl", description: "Stand with feet shoulder-width apart and knees slightly bent while holding the bar with an underhand grip. Exhale as you curl the weight toward your chest while keeping your elbows locked at your sides to prevent momentum. Inhale as you lower the weight slowly to the starting position to maintain control and protect your tendons."),
                 
-                Exercise(id: 7, details: "2 set. x 12 reps", imageName: "Tricep arms", description: "Engage your core and keep your elbows close to your sides, initiating the movement with a controlled push-down, extending your arms fully."),
+                Exercise(id: 7, details: "2 set. x 12 reps", imageName: "Tricep arms", description: "Stand with feet shoulder-width apart and hold a dumbbell with both hands directly above your head with arms fully extended. Exhale as you lower the weight slowly behind your head by bending only at the elbows while keeping your upper arms stationary. Inhale as you press the weight back to the starting position using your triceps while keeping your core tight to protect your lower back."),
                 
-                Exercise(id: 8, details: "1 sets x 10 reps", imageName: "Triceps arm", description: "Stand with feet shoulder-width apart, holding a dumbbell in each hand with palms facing inward."),
+                Exercise(id: 8, details: "1 sets x 10 reps", imageName: "Triceps arm", description: "Stand with feet hip-width apart and a slight bend in your knees while holding the rope attachment with a neutral grip. Exhale as you pull the rope down until your arms are fully extended at your sides while keeping your elbows pinned to your ribs. Inhale as you allow the rope to return slowly to chest height while maintaining a braced core to prevent any body swinging."),
             ]
         
         
         case .pecho:
             return [
-                Exercise(id: 1, details: "1 set x Maxi", imageName: "Bench press chest", description: "Lie flat on a bench, grip the bar slightly wider than shoulder-width, and lower it to your chest while keeping your elbows at a 45-degree angle, then press back up."),
+                Exercise(id: 1, details: "1 set x Maxi", imageName: "Bench press chest", description: "Lie flat on the bench with your feet planted firmly and grip the bar slightly wider than shoulder-width. Exhale as you press the bar upward while keeping your shoulder blades retracted and inhale as you lower it slowly to your mid-chest."),
                 
-                Exercise(id: 2, details: "1 set x 12 reps", imageName: "Chest dips pecho", description: "Set up on the bar, gripping with both hands. Lean slightly forward, lowering as far as you can. Engage core"),
+                Exercise(id: 2, details: "1 set x 12 reps", imageName: "Chest dips pecho", description: "Grip the parallel bars and lean your torso slightly forward with your elbows flared out to shift the focus to your chest. Exhale as you press yourself up to full extension and inhale as you lower your body until your shoulders are slightly below your elbows."),
                 
-                Exercise(id: 3, details: "1 sets x 12 reps", imageName: "Forward chest", description: "Maintain a neutral wrist position with your wrists in line with your forearm."),
+                Exercise(id: 3, details: "1 sets x 12 reps", imageName: "Forward chest", description: "Sit tall with your back against the pad and grip the handles at mid-chest level while keeping your feet planted firmly. Exhale as you press the handles forward to full extension without locking your elbows and inhale as you return to the start."),
                 
-                Exercise(id: 4, details: "1 set x 12 reps", imageName: "Incline dumbbells press", description: "Adjust the bench to an incline of 15–30 degrees. Sit on the bench and place two dumbbells in the creases of your hips."),
+                Exercise(id: 4, details: "1 set x 12 reps", imageName: "Incline dumbbells press", description: "Lie on an incline bench set at 45 degrees and press the dumbbells directly above your mid-chest while keeping your shoulder blades retracted. Exhale as you press the weights to full extension without locking your elbows and inhale as you lower them slowly to shoulder height."),
                 
-                Exercise(id: 5, details: "1 set to 6", imageName: "Open fly chest", description: "Focus on controlled movements, maintaining a slight bend in the elbows, and engaging the chest muscles throughout"),
+                Exercise(id: 5, details: "1 set to 6", imageName: "Open fly chest", description: "Lie flat on a bench with dumbbells held directly above your chest and a slight bend in your elbows throughout the movement. Inhale as you lower the weights in a wide arc until your chest feels a stretch and exhale as you squeeze them back to the start."),
                 
-                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Stand up bicep curl", description: "Lower the dumbbells back down in a controlled manner to the starting position."),
+                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Stand up bicep curl", description: "Stand with feet shoulder-width apart and knees slightly bent while holding the bar with an underhand grip. Exhale as you curl the weight toward your chest while keeping your elbows locked at your sides and inhale as you lower it slowly."),
                 
-                Exercise(id: 7, details: "1 set. x 12 reps", imageName: "Opening chest", description: "Lift arms up above the head so they’re extended but not locked out. There should be a slight bend at your elbow."),
+                Exercise(id: 7, details: "1 set. x 12 reps", imageName: "Opening chest", description: "Lie flat on a bench with dumbbells held directly above your chest and a slight bend in your elbows throughout the movement. Inhale as you lower the weights in a wide arc until your chest feels a stretch and exhale as you squeeze them back to the start."),
                 
-                Exercise(id: 8, details: "1 sets x 20 reps", imageName: "Push up chest", description: "Start in a high plank position. Place your hands on the ground and position them shoulder width apart. Lower your entire body. Pause at the bottom"),
+                Exercise(id: 8, details: "1 sets x 20 reps", imageName: "Push up chest", description: "Start in a high plank position with your hands slightly wider than shoulder-width and your body in a straight line from head to heels. Inhale as you lower your chest toward the floor by bending your elbows and exhale as you press back up to the start."),
             ]
         
         

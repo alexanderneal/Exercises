@@ -41,9 +41,14 @@ struct ExpandableText: View {
                 Button(expanded ? "Read less" : "Read more") {
                     withAnimation(.easeInOut) { expanded.toggle() }
                 }
-                .font(.callout)
-                .bold()
-                .buttonStyle(.plain)
+                .font(.caption)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 6)
+                .background(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(Color.secondary.opacity(0.12))
+                )
+                .contentShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
                 .accessibilityLabel(expanded ? "Collapse description" : "Expand description")
             }
         }
