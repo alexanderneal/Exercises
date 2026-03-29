@@ -14,8 +14,6 @@ struct ExerciseDetail: View {
                 .frame(maxWidth: .infinity)
                 .ignoresSafeArea(edges: .top)
                 
-                
-            
         VStack {
             Text(exercise.imageName)
                 .font(.title)
@@ -47,10 +45,11 @@ struct ExerciseDetail: View {
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
             
-            Text(exercise.description)
+            ExpandableText(text: exercise.description, lineLimit: 1)
                 .padding(.horizontal)
         
         }
+        .padding(.bottom, 40)
         .sheet(isPresented: $showingSheet) {
             HelpSheet(exercise: exercise)
                 .presentationDetents([.medium, .large])

@@ -3,7 +3,7 @@ extension Category {
         switch self {
         case .arms:
             return [
-                Exercise(id: 1, details: "1 set x 12 reps", imageName: "Bicep curl flat grab", description: "Keep your elbows close to your body, engage your core, and curl the weight up towards your chest while keeping your upper arms stationary"),
+                Exercise(id: 1, details: "1 set x 12 reps", imageName: "Bicep curl flat grab", description: "Keep your elbows close to your body, engage your core, and curl the weight up towards youm Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchr chest while keeping your upper arms stationary"),
                 
                 Exercise(id: 2, details: "1 set x 12 reps", imageName: "Bicep curl neutral grab", description: "Hold a dumbbell with your hand in a neutral grab. Keep your elbow close to your body. "),
                 

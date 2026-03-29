@@ -16,6 +16,7 @@
 		1052D15A2A9377A600DCBACC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052D1592A9377A600DCBACC /* Category.swift */; };
 		10A314D22E40EB6C00588DA5 /* AbstractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A314D12E40EB6C00588DA5 /* AbstractView.swift */; };
 		10A314D42E40EB8700588DA5 /* AboveAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A314D32E40EB8700588DA5 /* AboveAllView.swift */; };
+		10D4DC1A2F7976F400A0F6C1 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D4DC192F7976F400A0F6C1 /* ExpandableText.swift */; };
 		10FE67E42A8FBEA800A70694 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE67E32A8FBEA800A70694 /* ContentView.swift */; };
 		10FE67E62A8FBEA900A70694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FE67E52A8FBEA900A70694 /* Assets.xcassets */; };
 		10FE67E92A8FBEA900A70694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FE67E82A8FBEA900A70694 /* Preview Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		108AB7502C35D2C500C6CB9A /* Exercises.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exercises.entitlements; sourceTree = "<group>"; };
 		10A314D12E40EB6C00588DA5 /* AbstractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractView.swift; sourceTree = "<group>"; };
 		10A314D32E40EB8700588DA5 /* AboveAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboveAllView.swift; sourceTree = "<group>"; };
+		10D4DC192F7976F400A0F6C1 /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
 		10FE67DE2A8FBEA800A70694 /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FE67E32A8FBEA800A70694 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		10FE67E52A8FBEA900A70694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				10FE68132A8FCA6400A70694 /* ExercisesApp.swift */,
 				10FE67E52A8FBEA900A70694 /* Assets.xcassets */,
 				10FE67E72A8FBEA900A70694 /* Preview Content */,
+				10D4DC192F7976F400A0F6C1 /* ExpandableText.swift */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				1052D15A2A9377A600DCBACC /* Category.swift in Sources */,
 				10FE68122A8FC77000A70694 /* ExerciseDetail.swift in Sources */,
 				10FE67E42A8FBEA800A70694 /* ContentView.swift in Sources */,
+				10D4DC1A2F7976F400A0F6C1 /* ExpandableText.swift in Sources */,
 				104866DE2E420F8800B9F2C8 /* PilatesDetailView.swift in Sources */,
 				10A314D22E40EB6C00588DA5 /* AbstractView.swift in Sources */,
 				1052D1542A9375DA00DCBACC /* ExerciseCell.swift in Sources */,
