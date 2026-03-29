@@ -43,58 +43,58 @@ extension Category {
         
         case .back:
             return [
-                Exercise(id: 1, details: "1 set x 10 reps", imageName: "Pullup back", description: "Grip about shoulder-width apart. Pull. Pull yourself up by pulling your elbows down to the floor. Pass The bar. Repeat."),
+                Exercise(id: 1, details: "1 set x 10 reps", imageName: "Pullup back", description: "Grip the overhead bar with hands slightly wider than shoulder-width and your palms facing away from your body. Exhale as you pull your chest toward the bar by driving your elbows down and inhale as you lower yourself back to full extension."),
                 
-                Exercise(id: 2, details: "1 set x 10 reps", imageName: "Bent over barbell row back",description: "Keeping your back straight, and elbows close to your body, row the barbell towards your chest, squeezing your back muscles. Slowly lower to the starting position"),
+                Exercise(id: 2, details: "1 set x 10 reps", imageName: "Bent over barbell row back",description: "Hinge at your hips with a flat back and grip the barbell with hands slightly wider than shoulder-width while keeping your knees slightly bent. Exhale as you pull the bar toward your lower ribcage by driving your elbows back and inhale as you lower it under full control"),
                 
-                Exercise(id: 3, details: "2 sets x 8 reps", imageName: "Lat pulldown back", description: "Sit on the machine and adjust the thigh pads to secure your legs. Grasp the bar with a wide, overhand grip, keeping your wrists straight and your elbows slightly bent. Lean back slightly, engaging your core, and pull the bar down towards your upper chest"),
+                Exercise(id: 3, details: "2 sets x 8 reps", imageName: "Lat pulldown back", description: "Sit tall with your knees secured and grip the bar slightly wider than shoulder-width with your palms facing forward. Exhale as you pull the bar down to your upper chest by driving your elbows down and back, then inhale as you return to full extension."),
                 
-                Exercise(id: 4, details: "1 set x 10 reps", imageName: "One Arm Dumbbell Row back", description: "Leaning forward, supporting yourself with one hand on a bench, and pulling a dumbbell up towards your chest with the other arm, keeping your back straight and torso stable"),
+                Exercise(id: 4, details: "1 set x 10 reps", imageName: "One Arm Dumbbell Row back", description: "Place one hand and knee on a bench with your back flat and parallel to the floor while holding a dumbbell at full extension. Exhale as you pull the weight to your hip by driving your elbow back and inhale as you lower it with control to a full stretch."),
                 
-                Exercise(id: 5, details: "2 sets x 10 reps", imageName: "Press back", description: "Sit with your feet on the footrests, knees slightly bent, and grab the handles with a neutral grip. Keep your back straight, chest up, and pull the handles towards your stomach, squeezing your shoulder blades" ),
+                Exercise(id: 5, details: "2 sets x 10 reps", imageName: "Press back", description: "Sit tall with your chest against the pad and grip the handles at shoulder height with your elbows slightly bent. Exhale as you pull the handles back by squeezing your shoulder blades together and inhale as you return to the start."),
                 
-                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Pull back", description: "Exhale as you pull the handles towards your stomach. Inhale as you return to the starting position. "),
+                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Pull back", description: "Sit tall with your chest against the pad and grip the handles at shoulder height with your elbows slightly bent. Exhale as you pull the handles back by squeezing your shoulder blades together and inhale as you return to the start."),
                 
-                Exercise(id: 7, details: "1 set. x 10 reps", imageName: "Bend over dumbells row back", description: "Bend your knees and lean forward at the hips, keeping your spine nice and straight. "),
+                Exercise(id: 7, details: "1 set. x 10 reps", imageName: "Bend over dumbells row back", description: "Hinge at your hips with a flat back and hold dumbbells at arm's length with your knees slightly bent. Exhale as you pull the weights toward your hips by driving your elbows back and inhale as you lower them with control."),
                  
-                Exercise(id: 8, details: "2 sets x 10 reps", imageName: "Row back", description: "To row back effectively, focus on engaging your back muscles, maintaining a stable core, and using a controlled, smooth motion."),
+                Exercise(id: 8, details: "2 sets x 10 reps", imageName: "Row back", description: "Sit tall with your chest against the pad and grip the handles at shoulder height with your elbows slightly bent. Exhale as you pull the handles back by squeezing your shoulder blades together and inhale as you return to the start."),
             ]
         
         
         case .legs:
             return [
-                Exercise(id: 1, details: "2 sets x 8 reps", imageName: "Squats", description: "Stand with feet slightly wider than shoulder-width apart, toes pointed slightly outward, and engage your core. Lower your body by bending your knees and pushing your hips back as if sitting in a chair, keeping your back straight and chest up."),
+                Exercise(id: 1, details: "2 sets x 8 reps", imageName: "Squats", description: "Stand with feet shoulder-width apart and your chest held high while keeping your core braced and spine neutral. Inhale as you lower your hips back and down until your thighs are at least parallel to the floor, then exhale as you drive through your heels to return to the start."),
                 
-                Exercise(id: 2, details: "1 set x 12 reps", imageName: "Leg pressdown", description: "Adjust the seat to a comfortable position where your knees are at a 90-degree angle when your back is flat against the support."),
+                Exercise(id: 2, details: "1 set x 12 reps", imageName: "Leg pressdown", description: "Sit on the machine with your feet shoulder-width apart on the platform and your back pressed firmly against the pad. Inhale as you lower the weight by bending your knees to 90 degrees and exhale as you press the platform back to the start without locking your knees."),
                 
-                Exercise(id: 3, details: "2 sets x 8 reps", imageName: "Leg extension", description: "Sit on the machine with your knees bent at a 90-degree angle and your feet secured under the padded lever."),
+                Exercise(id: 3, details: "2 sets x 8 reps", imageName: "Leg extension", description: "Sit tall with your back against the pad and your shins tucked securely under the padded bar. Exhale as you extend your legs to full extension by contracting your quads and inhale as you lower the weight slowly to the start."),
                 
-                Exercise(id: 4, details: "1 set x 14 reps", imageName: "Leg curls", description: "Involve flexing the knee to bring the heels towards the buttocks"),
+                Exercise(id: 4, details: "1 set x 14 reps", imageName: "Leg curls", description: "Lie face down on the machine with your legs straight and the padded bar resting just above your heels. Exhale as you curl the weight toward your glutes by bending your knees and inhale as you lower it slowly back to the start."),
                 
-                Exercise(id: 5, details: "1 set x 10 reps", imageName: "Down press legs", description: "Start by positioning your feet on the platform, adjusting the angle and width based on your preference and the muscles you want to target."),
+                Exercise(id: 5, details: "1 set x 10 reps", imageName: "Down press legs", description: "Sit on the machine with your feet flat on the platform and your back pressed firmly against the seat. Inhale as you lower the weight toward your chest by bending your knees and exhale as you press it back to the start."),
                 
-                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Pull down legs", description: ""),
+                Exercise(id: 6, details: "1 set x 10 reps", imageName: "Pull down legs", description: "Sit on the machine with your feet flat on the platform and your back pressed firmly against the seat. Inhale as you lower the weight toward your chest by bending your knees and exhale as you press it back to the start."),
              
-                Exercise(id: 7, details: "1 set", imageName: "Steps legs", description: "Alternate legs for each repetition or complete all reps on one side before switching"),
+                Exercise(id: 7, details: "1 set", imageName: "Steps legs", description: "Stand tall in front of a box or bench with your chest up and your core engaged. Step one foot firmly onto the platform, exhale as you drive through your heel to stand up straight, and inhale as you step back down."),
             ]
             
         case .abs:
             return [
-                Exercise(id: 1, details: "1 set x 10 reps", imageName: "Plank", description: "Start by lying face down on the floor. Position your forearms on the ground, elbows directly beneath your shoulders, and your feet hip-width apart with toes tucked under."),
+                Exercise(id: 1, details: "1 set x 10 reps", imageName: "Plank", description: "Place your forearms on the floor with elbows under shoulders and extend your legs to form a straight line from head to heels. Hold the position while breathing steadily, keeping your core braced and your hips level to prevent your lower back from sagging.."),
                 
-                Exercise(id: 2, details: "1 set x 20 reps", imageName: "Abs workout", description: "Attach a rope handle to the high pulley of a cable machine. Kneel in front of the machine and hold the rope with both hands, bringing it around your head."),
+                Exercise(id: 2, details: "1 set x 20 reps", imageName: "Abs workout", description: "Sit tall on the floor with knees bent and feet lifted, holding a weight or clasping your hands in front of your chest. Exhale as you rotate your torso from side to side, touching the floor on each side while keeping your core braced and spine neutral."),
                 
-                Exercise(id: 3, details: "1 set x 15 reps", imageName: "Cable down abs", description: ""),
+                Exercise(id: 3, details: "1 set x 15 reps", imageName: "Cable down abs", description: "Kneel facing the cable machine and grip the rope attachment behind your head with your elbows tucked close to your ears. Exhale as you crunch your torso toward your knees by contracting your abs and inhale as you return slowly to the start."),
                 
-                Exercise(id: 4, details: "2 sets x 10 reps", imageName: "Decline abs", description: "Start by adjusting the bench to a suitable angle, typically between 30-45 degrees, with a greater angle increasing the difficulty."),
+                Exercise(id: 4, details: "2 sets x 10 reps", imageName: "Decline abs", description: "Secure your feet under the pads of a decline bench and lie back with your hands behind your head or crossed over your chest. Exhale as you curl your torso upward toward your knees by contracting your abdominals and inhale as you lower yourself back down with control.."),
                 
-                Exercise(id: 5, details: "1 set x 12 reps", imageName: "Hanging leg raise ab exercise", description: ""),
+                Exercise(id: 5, details: "1 set x 12 reps", imageName: "Hanging leg raise ab exercise", description: "Grip an overhead bar with hands shoulder-width apart and your body hanging in a straight, stable line. Exhale as you lift your legs to at least hip height by contracting your lower abs, then inhale as you lower them slowly. Keep your torso still and avoid swinging to ensure your core is doing the work throughout the entire set."),
                
-                Exercise(id: 6, details: "1 set x 8 reps", imageName: "Rise up abs", description: "Before initiating the movement, consciously tighten your abdominal muscles. Use your core muscles to lift your upper body off the floor, bringing your chest towards your knees."),
+                Exercise(id: 6, details: "1 set x 8 reps", imageName: "Rise up abs", description: "Lie flat on your back with your legs extended toward the ceiling and your hands reaching toward your toes. Exhale as you lift your shoulder blades off the floor to reach for your feet by contracting your upper abs. Inhale as you lower your torso back down with control while keeping your legs steady and vertical."),
                 
-                Exercise(id: 7, details: "1 set x 22 reps", imageName: "Sat down skipping abs", description: ""),
+                Exercise(id: 7, details: "1 set x 22 reps", imageName: "Sat down skipping abs", description: "Sit tall on the floor or a bench with your knees bent and feet lifted slightly to find your balance. Exhale as you lean back and rotate your torso, alternating between touching the floor on your left and right sides. Inhale as you return to center, keeping your core braced and your spine long throughout the movement."),
                 
-                Exercise(id: 8, details: "1 set x 30 secs", imageName: "Side plank", description: "Lie on your side with your knees bent. Prop your upper body up on your elbow, with your elbow under your shoulder. Raise your hips off the floor."),
+                Exercise(id: 8, details: "1 set x 30 secs", imageName: "Side plank", description: "Lie on your side with your legs straight and your weight propped up on one forearm directly under your shoulder. Exhale as you lift your hips off the floor until your body forms a straight line from head to heels. Hold the position while breathing steadily, keeping your core braced and your hips stacked vertically."),
             ]
         }
     }
